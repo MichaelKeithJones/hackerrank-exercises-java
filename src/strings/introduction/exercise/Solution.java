@@ -1,4 +1,4 @@
-package strings.introduction;
+package strings.introduction.exercise;
 
 import java.io.*;
 import java.util.*;
