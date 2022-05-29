@@ -1,9 +1,6 @@
-package anagrams;
-
-import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class JavaAnagrams {
 
     public static String rearrange(String str) {
         List<String> list = Arrays.asList(str.toLowerCase(Locale.ROOT).split(""));
