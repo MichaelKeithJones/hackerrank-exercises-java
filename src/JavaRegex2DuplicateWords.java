@@ -1,11 +1,9 @@
 //--| Got correct. Works in java 8. Refuses to actually show correct.
 
-package regex.two;
-
 import java.util.Scanner;
 import java.util.regex.*;
 
-public class DuplicateWords {
+public class JavaRegex2DuplicateWords {
 
     public static void main(String[] args) {
 

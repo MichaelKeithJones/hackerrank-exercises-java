@@ -1,11 +1,8 @@
-package currency.formatter;
-
-import java.io.*;
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.*;
 
-public class Solution {
+public class JavaCurrencyFormatter {
 
     public static void main(String [] args) {
 

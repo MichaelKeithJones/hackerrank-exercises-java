@@ -1,3 +1,12 @@
+/**
+ * HackerRank exercise that teaches the purpose and use of
+ * a one dimensional array.
+ *
+ * @author  Michael Jones
+ * @version 1.0
+ * @since   2022-5-29
+ */
+
 import java.util.*;
 
 public class Java1Darray {

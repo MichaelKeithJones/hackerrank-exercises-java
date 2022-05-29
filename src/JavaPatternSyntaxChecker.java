@@ -1,10 +1,8 @@
-package pattern.syntax.checker;
-
 import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-public class Solution {
+public class JavaPatternSyntaxChecker {
 
     public static void main(String[] args) {
 

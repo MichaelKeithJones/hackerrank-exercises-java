@@ -1,9 +1,6 @@
-package substring.comparisons.exercise;
-
-import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class JavaSubstringsComparison {
 
     public static String getSmallestAndLargest(String s, int k) {
         int arrayLength = 0;
