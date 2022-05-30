@@ -1,8 +1,13 @@
-import java.io.*;
+/**
+ * HackerRank exercise that teaches the purpose and use of
+ * a HashSet data Structure.
+ *
+ * @author  Michael Jones
+ * @version 1.0
+ * @since   2022-5-30
+ */
+
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class JavaHashset {
 
@@ -17,19 +22,28 @@ public class JavaHashset {
             pair_right[i] = s.next();
         }
 
-        Map<String, String> map = new HashMap<>();
+        int count = 0;
 
-        HashSet<String> left = new HashSet<>();
-        HashSet<String> right = new HashSet<>();
-
-        left.add(pair_left[0]);
-        right.add(pair_right[0]);
-        int count = 1;
+        /*
+        * Chose to use a Hashmap with a Hashset nested.
+        * Hashmaps do not allow repeated keys, Hashsets do not allow repeated values.
+        * Combining the 2 ignored ed all possible repeats in this exercise.
+        */
+        Map<String, HashSet<String>> map = new HashMap<>();
+        map.put(pair_left[0], new HashSet<String>());
+        map.get(pair_left[0]).add(pair_right[0]);
+        count++;
+        System.out.println(count);
         for (int i = 1; i < t; i++) {
-            if(left.contains(pair_left[i])) {
-
+            if (map.containsKey(pair_left[i])) {
+                if (map.get(pair_left[i]).add(pair_right[i])) count++;
+            } else {
+                map.put(pair_left[i], new HashSet<String>());
+                map.get(pair_left[i]).add(pair_right[i]);
+                count++;
             }
-
+            System.out.println(count);
         }
+
     }
 }
