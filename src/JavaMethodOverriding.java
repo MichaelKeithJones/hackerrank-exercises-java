@@ -7,7 +7,6 @@
  * @since   2022-5-31
  */
 
-
 import java.util.*;
 
 class Sports{
