@@ -1,36 +1,20 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.*;
+import java.util.*;
 
 public class Workspace {
 
-    public int solution(int[] A) {
-        if (A.length < 2) return A.length;
+    public int solution(int N) {
 
-        int count = 2;
-        int highest = 2;
-        int currentA = A[0];
-        int currentB = A[1];
+        List<String> bits = new ArrayList<>(Arrays.asList(Integer.toBinaryString(N).split( "" )));
 
-        for(int i = 2; i < A.length; i++) {
-            if (i % 2 == 0){
-                if (A[i] == currentA) {
-                    count++;
-                    if (count > highest) highest = count;
-                }
-                else count = 2;
-                currentA = A[i];
-            } else {
-                if (A[i] == currentB) {
-                    count++;
-                    if (count > highest) highest = count;
-                }
-                else count = 2;
-                currentB = A[i];
-            }
+        int count = 0;
+        int highest = 0;
+
+        for(String bit:bits) {
+            if (Integer.parseInt(bit) == 1) {
+                if(count > highest) highest = count;
+                count = 0;
+            } else count++;
         }
-
         return highest;
     }
 
@@ -46,9 +30,7 @@ public class Workspace {
 //
 //        System.out.println(sorted);
 
-        int [] a = new int[]{7, 4, -2, 4, -2, -9};
-
-        System.out.println("solution() = " + workspace.solution(a));
+        System.out.println("solution() = " + workspace.solution(32));
 
     }
 
