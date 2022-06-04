@@ -1,7 +1,18 @@
+/**
+ * HackerRank exercise that teaches the purpose and use of
+ * Regex, Matcher and Pattern
+ *
+ * @author  Michael Jones
+ * @version 1.0
+ * @since   2022-5-29
+ */
+
 //--| Got correct. Works in java 8. Refuses to actually show correct.
+//--| Edit: It didn't work because I wasn't supposed to change or add more than what was originally commented.
 
 import java.util.Scanner;
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class JavaRegex2DuplicateWords {
 
@@ -20,8 +31,7 @@ public class JavaRegex2DuplicateWords {
 
             // Check for subsequences of input that match the compiled pattern
             while (m.find()) {
-                input = input.replaceAll(input.substring(m.start(), m.end()), input.substring(m.start(), m.end()).substring(0, input.substring(m.start(), m.end()).indexOf(' ')));
-                m = p.matcher(input);
+                input = input.replaceAll(m.group(), m.group().substring(0, m.group().indexOf(" ")));
             }
 
             // Prints the modified sentence.
