@@ -1,36 +1,32 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Workspace {
 
-    public int solution(int N) {
-
-        List<String> bits = new ArrayList<>(Arrays.asList(Integer.toBinaryString(N).split( "" )));
-
-        int count = 0;
-        int highest = 0;
-
-        for(String bit:bits) {
-            if (Integer.parseInt(bit) == 1) {
-                if(count > highest) highest = count;
-                count = 0;
-            } else count++;
+    public static void parse(String input) {
+        String regex = "<([a-zA-z].*?)>\\w*[^<>]+\\w*<\\/\\1>";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+        String match = "";
+        while(matcher.find()) {
+            match = matcher.group();
+            int start = match.indexOf(">") + 1;
+            int end = match.indexOf("<", start);
+            System.out.println(match.substring(start , end));
         }
-        return highest;
+        if (match.equals("")) System.out.println("None");
     }
 
-    public static void main (String [] args) {
+    public static void main(String[] args){
 
-        Workspace workspace = new Workspace();
-//        List <String> names = new ArrayList<String>(Arrays.asList("Ava", "Aneri", "ALberto"));
-//
-//        List <String> sorted = names
-//                .stream()
-//                .sorted()
-//                .collect(Collectors.toList());
-//
-//        System.out.println(sorted);
-
-        System.out.println("solution() = " + workspace.solution(32));
+        Scanner in = new Scanner(System.in);
+        int testCases = Integer.parseInt(in.nextLine());
+        while(testCases>0){
+            String line = in.nextLine();
+            parse(line);
+            testCases--;
+        }
 
     }
 

@@ -7,10 +7,15 @@
  */
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class TagContentExtractor {
 
+    //-------------------------------------------------------|
+    //--| Faster but uglier Solution 1.
+    //-------------------------------------------------------|
     public static char type(String line) {
         if(line.length() < 2) return 'e';
         if(line.charAt(0) == '<') {
@@ -65,6 +70,25 @@ public class TagContentExtractor {
         }
         if(!flag) System.out.println("None");
     }
+
+    //-------------------------------------------------------|
+    //--| Slower, more readable and elegant Solution 2.
+    //-------------------------------------------------------|
+    /*
+    public static void parse(String input) {
+        String regex = "<([a-zA-z].*?)>\\w*[^<>]+\\w*<\\/\\1>";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+        String match = "";
+        while(matcher.find()) {
+            match = matcher.group();
+            int start = match.indexOf(">") + 1;
+            int end = match.indexOf("<", start);
+            System.out.println(match.substring(start , end));
+        }
+        if (match.equals("")) System.out.println("None");
+    }
+    */
 
     public static void main(String[] args){
 
