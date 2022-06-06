@@ -22,7 +22,7 @@ public class Workspace {
 
         Scanner in = new Scanner(System.in);
         int testCases = Integer.parseInt(in.nextLine());
-        while(testCases>0){
+        while(testCases > 0){
             String line = in.nextLine();
             parse(line);
             testCases--;
