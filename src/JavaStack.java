@@ -9,11 +9,8 @@ public class JavaStack {
         Stack<String> stack = new Stack<>();
 
         HashMap<String, String> symbolPairs = new HashMap<String, String>();
-        symbolPairs.put("{","}");
         symbolPairs.put("}","{");
-        symbolPairs.put("(",")");
         symbolPairs.put(")","(");
-        symbolPairs.put("[","]");
         symbolPairs.put("]","[");
 
         for(String symbol: symbols) {
@@ -26,7 +23,7 @@ public class JavaStack {
 
     public static void main(String [] argh) {
 
-        process("{}(");
+        process("}{");
 
     }
 
