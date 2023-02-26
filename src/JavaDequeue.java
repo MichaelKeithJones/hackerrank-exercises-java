@@ -31,7 +31,7 @@ public class JavaDequeue {
 }
 
 /*
-*  Solution 1 - Too Slow
+*  DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution 1 - Too Slow
 * --------------------------------------------------
         long highest = 0;
         for (int i = 0; i < n; i++) {
@@ -46,7 +46,7 @@ public class JavaDequeue {
 */
 
 /*
-*  Solution 2 - Too Slow
+*  DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution 2 - Too Slow
 * --------------------------------------------------
         long highest = 0;
         long unique = 0;

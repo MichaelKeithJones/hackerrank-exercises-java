@@ -1,7 +1,8 @@
-import java.io.*;
+package DataStructures.JavaSubarray;
+
 import java.util.*;
 
-public class JavaSubarray {
+public class Solution {
 
     public static void main(String[] args) {
 

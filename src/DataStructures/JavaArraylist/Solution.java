@@ -1,7 +1,9 @@
+package DataStructures.JavaArraylist;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class JavaArraylist {
+public class Solution {
 
     public static void main(String [] args) {
 

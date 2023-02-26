@@ -1,4 +1,4 @@
-/**
+package DataStructures.JavaHashset; /**
  * HackerRank exercise that teaches the purpose and use of
  * a HashSet data Structure.
  *
@@ -9,7 +9,7 @@
 
 import java.util.*;
 
-public class JavaHashset {
+public class Solution {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);

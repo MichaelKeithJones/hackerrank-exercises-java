@@ -1,15 +1,15 @@
-import java.io.*;
-import java.lang.reflect.Array;
+package DataStructures.JavaList;
+
 import java.util.*;
+import java.util.stream.Collectors;
 
-public class JavaList {
+public class Solution {
     public static void main(String[] args) {
-
         Scanner get = new Scanner(System.in);
 
         try {
             int N = Integer.parseInt(get.nextLine());
-            ArrayList<Integer> L = new ArrayList<>();
+            List<Integer> L = new ArrayList<>();
             for (int i = 0; i < N; i++) L.add(get.nextInt());
             get.nextLine();
             int Q =  Integer.parseInt(get.nextLine());
@@ -30,7 +30,7 @@ public class JavaList {
                     break;
                 }
             }
-            for (int i : L) System.out.print(i + " ");
+            System.out.print(L.stream().map(Object::toString).collect(Collectors.joining(" ")));
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }

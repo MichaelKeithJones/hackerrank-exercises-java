@@ -1,7 +1,7 @@
+package DataStructures.JavaStack;
+
 import java.util.*;
-
-public class JavaStack {
-
+class Solution{
 
     public static void process(String input) {
 
@@ -20,11 +20,14 @@ public class JavaStack {
         System.out.println(stack.empty());
     }
 
+    public static void main(String []argh)
+    {
+        Scanner get = new Scanner(System.in);
 
-    public static void main(String [] argh) {
-
-        process("}{");
+        while (get.hasNext()) {
+            String input = get.next();
+            process(input);
+        }
 
     }
-
 }

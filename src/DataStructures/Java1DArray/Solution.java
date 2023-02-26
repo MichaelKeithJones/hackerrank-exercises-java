@@ -6,13 +6,12 @@
  * @version 1.0
  * @since   2022-5-29
  */
+package DataStructures.Java1DArray;
 
 import java.util.*;
 
-public class Java1Darray {
-
+public class Solution {
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 
@@ -24,9 +23,6 @@ public class Java1Darray {
 
         scan.close();
 
-        // Prints each sequential element in array a
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
-        }
+        Arrays.stream(a).forEach(System.out::println);
     }
 }

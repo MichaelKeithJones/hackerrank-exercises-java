@@ -1,8 +1,10 @@
+package DataStructures.JavaMap;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class JavaMap {
+public class Solution {
 
     public static void main(String[] args) {
         try {
@@ -28,7 +30,7 @@ public class JavaMap {
 
             b.close();
         } catch (Exception e) {
-            System.out.println(e);
+            //System.out.println(e);
         }
     }
 
