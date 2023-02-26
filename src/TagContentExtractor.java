@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 public class TagContentExtractor {
 
     //-------------------------------------------------------|
-    //--| Faster but uglier DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution 1.
+    //--| Faster but uglier DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.DataStructures.JavaDequeue.DataStructures.JavaBitSet.Solution 1.
     //-------------------------------------------------------|
     public static char type(String line) {
         if(line.length() < 2) return 'e';
@@ -72,7 +72,7 @@ public class TagContentExtractor {
     }
 
     //-------------------------------------------------------|
-    //--| Slower, more readable and elegant DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution 2.
+    //--| Slower, more readable and elegant DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.DataStructures.JavaDequeue.DataStructures.JavaBitSet.Solution 2.
     //-------------------------------------------------------|
     /*
     public static void parse(String input) {

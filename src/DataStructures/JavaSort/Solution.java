@@ -1,4 +1,4 @@
-/**
+package DataStructures.JavaSort; /**
  * HackerRank exercise that teaches the purpose and use of
  * sorting and comparators in Java
  *
@@ -32,7 +32,7 @@ class Student{
     }
 }
 
-public class JavaSort {
+public class Solution {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         int testCases = Integer.parseInt(in.nextLine());
@@ -55,6 +55,6 @@ public class JavaSort {
                 .sorted(Comparator.comparingDouble(Student::getCgpa).reversed().thenComparing(Student::getFname).thenComparing(Student::getId))
                 .collect(Collectors.toList());
 
-        orderedStudentList.stream().map(e -> e.getFname()).forEach(System.out::println);
+        orderedStudentList.stream().map(Student::getFname).forEach(System.out::println);
     }
 }

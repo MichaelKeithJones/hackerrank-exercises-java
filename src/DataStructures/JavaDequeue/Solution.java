@@ -1,6 +1,8 @@
+package DataStructures.JavaDequeue;
+
 import java.util.*;
 
-public class JavaDequeue {
+public class Solution {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -31,7 +33,7 @@ public class JavaDequeue {
 }
 
 /*
-*  DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution 1 - Too Slow
+*  DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.DataStructures.JavaDequeue.DataStructures.JavaBitSet.Solution 1 - Too Slow
 * --------------------------------------------------
         long highest = 0;
         for (int i = 0; i < n; i++) {
@@ -46,7 +48,7 @@ public class JavaDequeue {
 */
 
 /*
-*  DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution 2 - Too Slow
+*  DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.DataStructures.JavaDequeue.DataStructures.JavaBitSet.Solution 2 - Too Slow
 * --------------------------------------------------
         long highest = 0;
         long unique = 0;

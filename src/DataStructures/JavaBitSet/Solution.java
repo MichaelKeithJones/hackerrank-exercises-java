@@ -1,4 +1,4 @@
-/**
+package DataStructures.JavaBitSet; /**
  * HackerRank exercise that teaches the purpose and use of
  * BitSets in Java
  *
@@ -9,7 +9,7 @@
 
 import java.util.*;
 
-public class JavaBitSet {
+public class Solution {
 
     public static void main(String[] args) {
 

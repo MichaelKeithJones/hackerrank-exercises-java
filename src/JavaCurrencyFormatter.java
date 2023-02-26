@@ -23,7 +23,7 @@ public class JavaCurrencyFormatter {
         System.out.printf("China: %s%n", china.format(payment));
         System.out.printf("France: %s%n", france.format(payment));
 
-        //--| DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution on HackerRank
+        //--| DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.DataStructures.JavaDequeue.DataStructures.JavaBitSet.Solution on HackerRank
         //--| Note: Had to run the below Java 8 version to get it to work on HackerRank
 
         //    import java.io.*;
@@ -32,7 +32,7 @@ public class JavaCurrencyFormatter {
         //    import java.math.*;
         //    import java.util.regex.*;
         //
-        //    public class DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.Solution {
+        //    public class DataStructures.JavaList.DataStructures.JavaMap.DataStructures.JavaStack.DataStructures.JavaDequeue.DataStructures.JavaBitSet.Solution {
         //
         //        public static void main(String[] args) {
         //            Scanner scanner = new Scanner(System.in);

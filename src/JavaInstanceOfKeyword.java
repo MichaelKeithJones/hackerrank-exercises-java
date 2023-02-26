@@ -38,7 +38,7 @@ public class JavaInstanceOfKeyword{
         int t = sc.nextInt();
         for(int i=0; i<t; i++){
             String s=sc.next();
-            if(s.equals("Student"))mylist.add(new Student1());
+            if(s.equals("DataStructures.JavaSort.Student"))mylist.add(new Student1());
             if(s.equals("Rockstar"))mylist.add(new Rockstar());
             if(s.equals("Hacker"))mylist.add(new Hacker());
         }

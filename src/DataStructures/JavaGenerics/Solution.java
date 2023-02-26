@@ -1,4 +1,4 @@
-/**
+package DataStructures.JavaGenerics; /**
  * HackerRank exercise that teaches the purpose and use of
  * generics in Java
  *
@@ -7,7 +7,6 @@
  * @since   2022-5-30
  */
 
-import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
@@ -15,7 +14,7 @@ class Printer {
     public <T> void printArray(T[] a) { Arrays.stream(a).map(e -> e).forEach(System.out::println); }
 }
 
-public class JavaGenerics {
+public class Solution {
 
     public static void main( String args[] ) {
         Printer myPrinter = new Printer();

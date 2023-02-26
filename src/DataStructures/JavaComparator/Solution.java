@@ -1,3 +1,5 @@
+package DataStructures.JavaComparator;
+
 import java.util.*;
 
 class Player{
@@ -14,7 +16,7 @@ class Player{
 }
 
 
-public class JavaComparator {
+public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
